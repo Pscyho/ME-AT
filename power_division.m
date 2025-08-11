@@ -1,13 +1,13 @@
 c=3e8
 f=1e9
-lambda=c/f
-omega=2*pi*f
-z0=50
-N=3
-theta=pi/(4*N)
-lambda_g=lambda/(4*N)
-L=lambda_g/(4*tan(theta))
-C=1/(omega*z0*L)
+lambda=c/f %wavelength in meters
+omega=2*pi*f %angular frequency
+z0=50 %characteristic impedance in Ohms
+N=3 %this is the number of divisions
+theta=pi/(4*N) %angle in radians for each division
+lambda_g=lambda/(4*N) %guided wavelength
+L=lambda_g/(4*tan(theta)) %inductance in Henries
+C=1/(omega*z0*L) %capacitance in Farads
 disp('Microstrip Power Divider Result:')
 disp(['Wavelength: ', num2str(lambda), ' m'])
 disp(['Frequency: ', num2str(f), ' Hz'])
