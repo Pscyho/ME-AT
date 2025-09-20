@@ -1,3 +1,6 @@
+clc 
+clear all
+close all
 f = 5e9;        
 c = 3e8;        
 lambda = c / f; 

@@ -1,3 +1,6 @@
+clc 
+clear all
+close all
 c=3e8
 f=1e9
 lambda=c/f %wavelength in meters
